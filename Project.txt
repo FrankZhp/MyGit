@@ -1,0 +1,19 @@
+作业步骤：
+1.读取CSV文件,写入Excel文件，以利后面处理
+2.合并FESTO文件到一个Sheet
+3.Mapping
+4.生成报告
+5.计算价格
+
+业务逻辑
+1.Summary页
+第B列Period来自于ClosedDate,转化成yyyyQX
+第H列Price Table来自于ClosedDate,格式：yyyy-mm
+
+2.
+价格表里的第2列SI Code，例：WPS_Client_Normal_Install (Self-Service Point)
+由[Service Type]+'_'+[Service Sub-Type]+'_'+[Service Level]+'_'+[Ticket Type]这4列构成	
+
+3.根据X列Country来判断试用哪个国家的价格标准
+
+4.可定义一个参数Excel，程序读这个Excel获取相应参数定义，数组定义等
